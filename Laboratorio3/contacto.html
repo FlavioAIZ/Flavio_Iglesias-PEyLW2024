@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<h2>Contacto</h2>
-
-<form action="./index.php">
-  <label for="nombre">Nombres:</label><br>
-  <input type="text" id="nombre" name="nombre" value=""><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form> 
-
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
-
-</body>
+  <body>
+    <h2>Contacto</h2>
+    <form action="./formulario.txt" method="POST">
+      <label for="nombre">Nombres: *</label><br>
+      <input type="text" id="nombre" name="nombre" maxlength="20" required size="50"><br>
+      <label for="apellido">Apellidos: </label><br>
+      <input type="text" id="apellido" name="apellido" maxlength="20" size="50"><br>
+      <label for="email">Correo electrónico: *</label><br>
+      <input type="email" id="email" name="email" required placeholder="direccion@mail.com" size="50"><br>
+      <label for="telefono">Teléfono: </label><br>
+      <input type="text" id="telefono" name="telefono" maxlength="12" pattern="\d{4} \d{2} \d{4}" placeholder="2920 55 5199" size="50"><br>      
+      <label for="edad">Edad: </label><br>
+      <input type="number" style="width: 380px;" id="edad" name="edad" min="16" max="120" step="1"><br>
+      <label for="direccion">Dirección: </label><br>
+      <textarea id="direccion" name="direccion" rows="2" cols="50"></textarea><br>
+      <label for="provincia">Provincia:</label><br>
+      <input type="text" size="50" id="provincia" name="provincia" list="provincias"><br>
+      <datalist id="provincias">
+        <option value="Río Negro">
+        <option value="Chubut">
+        <option value="Santa Cruz">
+        <option value="Tierra del Fuego">
+        <option value="Neuquén">
+      </datalist>
+      <label for="codigoPostal">Código Postal: </label><br>
+      <input type="text" id="codigoPostal" name="codigoPostal" pattern="[A-Za-z]\d{4}[A-Za-z]{3}" placeholder="Formato: A1234ABC" size="50"><br>
+      <div class="radio-container">
+      <label for="medioContacto">Método preferido de contacto: </label><br>
+      <input type="radio" id="correoElectronico" name="medioContacto" value="Correo Electrónico" checked>
+      <label for="ce"> Correo Electrónico  </label>
+      <input type="radio" id="css" name="medioContacto" value="Correo Postal">
+      <label for="cp"> Correo Postal  </label>
+      <input type="radio" id="javascript" name="medioContacto" value="JavaScript">
+      <label for="tel"> Teléfono  </label><br>      
+      <br>
+      <input type="submit" value="Enviar">
+    </form>
+  <p>Al clickear en el boton "Enviar", se enviará el formulario con los datos.</p>
+  </body>
 </html>
