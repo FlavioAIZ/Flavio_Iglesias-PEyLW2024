@@ -1,0 +1,41 @@
+body {
+    font-family:Arial,Helvetica,sans-serif;
+    background-color: #ffffff;
+   }
+   header {
+    font-style: italic,initial;
+    width:90%;
+    background-color:White;
+    color:red;
+    margin-right: auto;
+    margin-left: auto;
+   }
+   image {
+    float: left;
+    border: blue;
+   }
+   article {
+    width:90%;
+    padding: 1em;
+    text-align: justify;
+    background-color:white;
+    margin-right: auto;
+    margin-left:5;
+    border-color: rgb(19, 181, 209);
+    border-style:double;
+    border-width:10px;
+   }
+   main {
+    width:95%;
+    background-color:White;
+    color:blue;
+    margin-right: auto;
+    margin-left: auto;
+   }
+   footer {
+    width:100%;
+    background-color:blue;
+    color:white;
+    margin-right: 10;
+    margin-left: auto;
+   }
