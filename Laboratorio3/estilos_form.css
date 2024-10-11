@@ -2,7 +2,7 @@ font-face {
     font-family: 'Electrica';
     src: url('/fonts/electrical.ttf') format('truetyoe');
     font-weight: normal;
-    font-style: normal;
+    font-style: normal; 
   }
   
 body {
