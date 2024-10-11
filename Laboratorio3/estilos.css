@@ -1,41 +1,117 @@
+font-face {
+    font-family: 'Electrica';
+    src: url('/fonts/electrical.ttf') format('truetyoe');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
 body {
-    font-family:Arial,Helvetica,sans-serif;
-    background-color: #ffffff;
+    font-family: Arial,Helvetica,sans-serif;
+    background-color: #02741b;
    }
-   header {
-    font-style: italic,initial;
+
+header { 
+    font-family: Electrical,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    letter-spacing: 4px;
     width:90%;
-    background-color:White;
-    color:red;
-    margin-right: auto;
-    margin-left: auto;
+    color: #a1e410;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 20px;
    }
-   image {
+
+header img{
+    float: left;
+    height: 80px;
+    padding-right: 10px;
+}
+
+nav {
+    background-color: #02741b;
+    margin: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    flex: 1;    
+}
+
+nav a {
+    display: block;
+    padding: 14px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #a1e410;
+    color: #02741b;
+}
+
+image {
     float: left;
     border: blue;
    }
-   article {
+
+article {
     width:90%;
-    padding: 1em;
+    padding: 10px;
     text-align: justify;
-    background-color:white;
-    margin-right: auto;
-    margin-left:5;
+    margin-right: 20px;
+    margin-left:20px;
     border-color: rgb(19, 181, 209);
     border-style:double;
     border-width:10px;
+    border-radius: 15px;
    }
-   main {
+
+article p {
+    padding: 10px;
+}
+
+article img {
+    width: 130px;
+    float: left;
+    margin: 10px;
+}
+
+article h2 {
+    font-family: Electrical,Arial,Helvetica,sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+main {
     width:95%;
-    background-color:White;
-    color:blue;
+    color:rgb(255, 255, 255);
     margin-right: auto;
     margin-left: auto;
    }
-   footer {
-    width:100%;
-    background-color:blue;
+
+main p {
+    width: 90%;
+    padding: 10px;
+    text-align: justify;
+}
+
+main h3 {
+    color: #a1e410;
+    font-weight: bold; 
+}
+
+footer {
+    width: 90%;
+    background-color:#02741b;
     color:white;
-    margin-right: 10;
-    margin-left: auto;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
    }

@@ -1,95 +1,129 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/estilos_form.css" media="screen">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAIZ - Acerca de</title>
+  </head>
+
   <body>
-    <h2>Contacto</h2>
-    <form action="./formulario.txt" method="POST">
-      <label for="nombre">Nombres: *</label><br>
-      <input type="text" id="nombre" name="nombre" maxlength="20" required size="50"><br>
-      <label for="apellido">Apellidos: </label><br>
-      <input type="text" id="apellido" name="apellido" maxlength="20" size="50"><br>
-      <label for="email">Correo electrónico: *</label><br>
-      <input type="email" id="email" name="email" required placeholder="direccion@mail.com" size="50"><br>
-      <label for="telefono">Teléfono: </label><br>
-      <input type="text" id="telefono" name="telefono" maxlength="12" pattern="\d{4} \d{2} \d{4}" placeholder="2920 55 5199" size="50"><br>      
-      <label for="edad">Edad: </label><br>
-      <input type="number" style="width: 380px;" id="edad" name="edad" min="16" max="120" step="1"><br>
-      <label for="direccion">Dirección: </label><br>
-      <textarea id="direccion" name="direccion" rows="2" cols="50"></textarea><br>
-      <label for="provincia">Provincia:</label><br>
-      <input type="text" size="50" id="provincia" name="provincia" list="provincias"><br>
-      <datalist id="provincias">
-        <option value="Río Negro">
-        <option value="Chubut">
-        <option value="Santa Cruz">
-        <option value="Tierra del Fuego">
-        <option value="Neuquén">
-      </datalist>
-      <label for="codigoPostal">Código Postal: </label><br>
-      <input type="text" id="codigoPostal" name="codigoPostal" pattern="[A-Za-z]\d{4}[A-Za-z]{3}" placeholder="Formato: A1234ABC" size="50"><br>
-      <div class="radio-container">
-      <label for="medioContacto">Método preferido de contacto: </label><br>
-      <input type="radio" id="correoElectronico" name="medioContacto" value="Correo Electrónico" checked>
-      <label for="ce"> Correo Electrónico  </label>
-      <input type="radio" id="css" name="medioContacto" value="Correo Postal">
-      <label for="cp"> Correo Postal  </label>
-      <input type="radio" id="javascript" name="medioContacto" value="JavaScript">
-      <label for="tel"> Teléfono  </label><br>
-      <label for="suscripcion">Elija el tipo de suscripción: </label><br>
-      <input type="checkbox" id="suscripcion1" name="suscripcion1" value="noticias">
-      <label for="suscripcion1">Noticias</label>
-      <input type="checkbox" id="suscripcion2" name="suscripcion2" value="promos">
-      <label for="suscripcion2">Promociones</label>
-      <input type="checkbox" id="suscripcion3" name="suscripcion3" value="alertas" checked>
-      <label for="suscripcion3">Alertas</label>
-      <input type="checkbox" id="suscripcion4" name="suscripcion4" value="eventos">
-      <label for="suscripcion4">Eventos</label><br><br>
-      <input type="submit" value="Enviar"><br><br>
-    </form>
-    <table cellpadding="5" border="2" cellspacing="5" width="400">
-      <tr>
-        <th>Campo</th>
-        <th>Valor</th>
-      </tr>
-      <tr>
-        <td>Nombres</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Apellidos</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Correp Electrónico</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Teléfono</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Edad</th>
-        <td></th>
-      </tr>
-      <tr>
-        <td>Dirección</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Provincias</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Código Postal</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Método de Contacto</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Tipo de suscripción</td>
-        <td></td>
-      </tr>
-    </table>
+    <header>
+      <img src="/images/ovalo_png.png" />
+      <h1>Flavio Iglesias Zabala</h1>
+      <h3>Pagina personal</h3>
+    </header>
+    <nav>
+      <ul>
+          <li><a href="./index.html">Inicio</a> </li>
+          <li><a href="./acercade.html">Acerca de</a> </li>
+          <li><a href="./contacto.html">Contacto</a> </li>
+      </ul>         
+    </nav>
+
+    <main>
+      <h2>Contacto</h2>
+      <form action="./formulario.txt" method="POST">
+        <label for="nombre">Nombres: (Requerido)</label><br>
+        <input type="text" id="nombre" name="nombre" maxlength="20" required><br>
+        <label for="apellido">Apellidos: </label><br>
+        <input type="text" id="apellido" name="apellido" maxlength="20"><br>
+        <label for="email">Correo electrónico: (Requerido)</label><br>
+        <input type="email" id="email" name="email" required placeholder="direccion@mail.com"><br>
+        <label for="telefono">Teléfono: </label><br>
+        <input type="text" id="telefono" name="telefono" maxlength="12" pattern="\d{4} \d{2} \d{4}" placeholder="2920 55 5199"><br>      
+        <label for="edad">Edad: </label><br>
+        <input type="number" id="edad" name="edad" min="16" max="120" step="1"><br>
+        <label for="direccion">Dirección: </label><br>
+        <textarea id="direccion" name="direccion" rows="2" cols="50"></textarea><br>
+        <label for="provincia">Provincia:</label><br>
+        <input type="text" size="50" id="provincia" name="provincia" list="provincias"><br>
+        <datalist id="provincias">
+          <option value="Río Negro">
+          <option value="Chubut">
+          <option value="Santa Cruz">
+          <option value="Tierra del Fuego">
+          <option value="Neuquén">
+        </datalist>
+        <label for="codigoPostal">Código Postal: </label><br>
+        <input type="text" id="codigoPostal" name="codigoPostal" pattern="[A-Za-z]\d{4}[A-Za-z]{3}" placeholder="Formato: A1234ABC" size="50"><br>
+        <div class="radio-container">
+        <label for="medioContacto">Método preferido de contacto: </label><br>
+        <div class="bloque-radio">
+          <input type="radio" id="correoElectronico" name="medioContacto" value="Correo Electrónico" checked>
+          <label for="ce"> Correo Electrónico  </label>
+          <input type="radio" id="css" name="medioContacto" value="Correo Postal">
+          <label for="cp"> Correo Postal  </label>
+          <input type="radio" id="javascript" name="medioContacto" value="JavaScript">
+          <label for="tel"> Teléfono  </label><br>
+        </div>
+          <label for="suscripcion">Elija el tipo de suscripción: </label><br>
+        <div class="bloque-checkbox">              
+          <input type="checkbox" id="suscripcion1" name="suscripcion1" value="noticias">
+          <label for="suscripcion1">Noticias</label>
+          <input type="checkbox" id="suscripcion2" name="suscripcion2" value="promos">
+          <label for="suscripcion2">Promociones</label>
+          <input type="checkbox" id="suscripcion3" name="suscripcion3" value="alertas" checked>
+          <label for="suscripcion3">Alertas</label>
+          <input type="checkbox" id="suscripcion4" name="suscripcion4" value="eventos">
+          <label for="suscripcion4">Eventos</label><br><br>
+        </div>
+        <input type="submit" value="Enviar"><br><br>
+      </form>
+      <table cellpadding="5" border="2" cellspacing="5" width="400">
+        <tr>
+          <th>Campo</th>
+          <th>Valor</th>
+        </tr>
+        <tr>
+          <td>Nombres</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Apellidos</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Correo Electrónico</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Teléfono</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Edad</th>
+          <td></th>
+        </tr>
+        <tr>
+          <td>Dirección</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Provincias</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Código Postal</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Método de Contacto</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Tipo de suscripción</td>
+          <td></td>
+        </tr>
+      </table>
+    </main>
+    <footer>
+      <p>©2024.<br>
+        <b>Universidad Nacional del Comahue<br>
+        Nodo Curza Sierra Grande.</b><br>
+        Los Alerces 485 B° 25 de Mayo<br>
+        Sierra Grande - Río Negro
+      </p>
+    </footer>
   </body>
 </html>
