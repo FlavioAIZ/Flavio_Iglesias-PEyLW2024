@@ -1,6 +1,6 @@
 font-face {
     font-family: 'Electrica';
-    src: url('/fonts/electrical.ttf') format('truetyoe');
+    src: url('./fonts/electrical.ttf') format('truetyoe');
     font-weight: normal;
     font-style: normal;
   }
@@ -29,13 +29,12 @@ header img{
 
 nav {
     background-color: #02741b;
-    margin: 10px;
+    width: 88%;
+    margin-left: 10px;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
     display: flex;
 }
 
@@ -62,11 +61,11 @@ image {
    }
 
 article {
-    width:90%;
+    width: 88%;
     padding: 10px;
     text-align: justify;
     margin-right: 20px;
-    margin-left:20px;
+    margin-left: 20px;
     border-color: rgb(19, 181, 209);
     border-style:double;
     border-width:10px;
