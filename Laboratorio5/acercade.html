@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" type="text/css" href="./estilos.css" media="screen">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FAIZ - Acerca de</title>
+    </head>
+    <body>
+
+        <div id="arriba"></div>
+
+        <header>
+            <img src="./images/ovalo_png.png" class="imagen-Flavio" alt="Flavio Iglesias Zabala">        
+            <div class="Header-Text-Block">
+                <h1>Flavio Iglesias Zabala</h1>
+                <h2>Pagina personal</h2>
+            </div>
+            <img src="./images/Logo UNComa.png" class="imagen-rotativa" alt="Logo Universidad del Comahue">
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a> </li>
+                <li><a href="./acercade.html">Acerca de</a> </li>
+                <li><a href="./contacto.html">Contacto</a> </li>
+            </ul>         
+        </nav>
+
+        <main>
+            <article class="biografia">
+                <h2 class="titulo">Biografia</h2>
+                <div class="contenido">
+                    <img src="./images/Autor.jpg" class="img_autor">
+                    <p>Flavio Anibal Iglesias Zabala nació en Capital Federal un 17 de octubre del año<span id="puntos">...</span><span id="mas" style="display: none"> 1972. Vivió en Villa Bosch, 
+                    en el Gran Buenos Aires, hasta los 12 años, cuando un 7 de junio del año 1985 se mudó a Sierra Grande, 
+                    donde terminó la primaria en la Escuela N° 60 y luego hizo sus estudios secundarios en la 
+                    Escuela Industrial Técnica N° 7 (actual CET N° 12), recibiendose de Técnico Electromecánico.</span></p>
+                    <p><span id="Tx2" style="display: none;">En el año 1992 se mudo a la ciudad de Bahía Blanca, donde curso hasta el 3° año de la carrera 
+                    Licenciatura en Ciencias de la Computación en la Universidad del Sur. En 1995 se mudo a Buenos Aires
+                    con la idea de trabajar y estudiar, pero ante la incompatibilidad de estas dos actividades, 
+                    decide retornar a Sierra Grande, en el año 1996, donde se casá con Gabriela y tiene 3 hijas.</span></p>
+                    <p></p> <span id="Tx3" style="display: none;">En el año 2018 ingresa a dar clases en el CET N° 12 y un año despues comienza los estudios para 
+                    ser Profesor de materias técnicas acorde a su título de base, recibiendose en el año 2021. 
+                    Actualmente es profesor titular en dicho colegio y estudia Tecnicatura Universitaria en Desarrollo Web.</span></p>
+                    <button onclick="leer_mas_menos()" id="miBoton">Leer mas</button>
+                </div>
+
+                <script>
+                    function leer_mas_menos()
+                    {
+                        var puntos = document.getElementById("puntos");
+                        var masTexto = document.getElementById("mas");
+                        var Texto2 = document.getElementById("Tx2");
+                        var Texto3 = document.getElementById("Tx3");
+                        var btnText = document.getElementById("miBoton");
+
+                        if (puntos.style.display === "none")
+                        {
+                            puntos.style.display = "inline";
+                            btnText.innerHTML = "Leer mas";
+                            masTexto.style.display = "none";
+                            Texto2.style.display = "none";
+                            Texto3.style.display = "none";
+                        } else
+                        {
+                            puntos.style.display = "none";
+                            btnText.innerHTML = "Leer menos";
+                            masTexto.style.display = "inline";
+                            Texto2.style.display = "inline";
+                            Texto3.style.display = "inline";
+                        }                       
+                    }
+                </script>
+            </article>
+        </main>
+
+
+
+        <footer>
+            <p>©2024
+            <b>Universidad Nacional del Comahue<br>
+            Nodo Curza Sierra Grande</b><br>
+            Los Alerces 485 B° 25 de Mayo<br>
+            Sierra Grande - Río Negro</p>
+        </footer>
+
+        <a class="flecha" href="#top">
+            <div class="flecha1">
+                &#8593;
+            </div>
+        </a>
+       
+    </body>
+</html>

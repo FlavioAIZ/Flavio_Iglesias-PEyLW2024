@@ -96,6 +96,14 @@ nav a:hover {
     margin-left: auto;
    }
 
+.biografia.tx2 {
+    display: none;
+}
+
+.biografia.tx3 {
+    display: none;
+}
+
 .titulo {
     font-family: Electrical,Arial,Helvetica,sans-serif;
     letter-spacing: 4px;
