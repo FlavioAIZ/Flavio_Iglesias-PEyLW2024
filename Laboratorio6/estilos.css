@@ -1,0 +1,201 @@
+font-face {
+    font-family: 'Electrica';
+    src: url('fonts/electrical.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    background-color: #02741b;
+}
+
+header { 
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 94%;
+    font-family: Electrical,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: #a1e410;
+    background-color: #02741b;
+    top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+}
+
+.header-text-block {
+    display: block;
+    width: 90%;
+    height: 100px;
+    justify-content: center;
+}
+
+.imagen-Flavio {
+    float: left;
+    height: 100px;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+    
+.imagen-rotativa {
+    float: inline-end;
+    height: 100px;
+    animation: girar 10s ease-in;
+    }
+  
+  @keyframes girar {
+    from {
+      transform: rotateY(0deg);
+    } 
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+
+nav {
+    background-color: #02741b;
+    width: 90%;
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;    
+}
+
+nav a {
+    display: block;
+    padding: 14px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #a1e410;
+    color: #02741b;
+}
+
+.biografia {
+    width: 85%;
+    border-color: rgb(19, 181, 209);
+    border-style:double;
+    border-width:10px;
+    border-radius: 15px;
+    padding: 1em;
+    margin-right: auto;
+    margin-left: auto;
+   }
+
+.biografia.tx2 {
+    display: none;
+}
+
+.biografia.tx3 {
+    display: none;
+}
+
+.titulo {
+    font-family: Electrical,Arial,Helvetica,sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 10px;
+    width: 95%;
+    color: #a1e410;
+    font-weight: bold; 
+}
+
+.contenido {
+    width: 95%;
+    max-height: 300px;
+    padding: 10px;
+    text-indent: 2em; 
+    text-align: justify;
+    color:rgb(255, 255, 255);    
+    overflow-y: auto;
+    padding-top: 0px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_autor {
+    width: 130px;
+    float: left;
+    margin: 10px;
+}
+
+.index_main {
+    width: 90%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.index_main h3{
+    color: #a1e410;
+    font-weight: bold;
+}
+
+.juego {
+    color: #a1e410;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.juego input[type="number"] {
+    width: 50px;
+    text-align: center;
+}
+
+.juego button {
+    margin-left: 10px;
+}
+
+.flecha {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: whitesmoke;
+    color: #a1e410;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.flecha :hover {
+    background-color: #a1e410;    
+}
+
+.flecha1 {
+    font-size: 24px;
+    line-height: 0;
+}
+
+footer {
+    width: 90%;
+    background-color:#02741b;
+    color:white;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+

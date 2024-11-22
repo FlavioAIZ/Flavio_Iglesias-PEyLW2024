@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" type="text/css" href="./estilos.css" media="screen">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FAIZ - Acerca de</title>
+    </head>
+    <body>
+
+        <div id="arriba"></div>
+
+        <header>
+            <img src="./images/ovalo_png.png" class="imagen-Flavio" alt="Flavio Iglesias Zabala">        
+            <div class="Header-Text-Block">
+                <h1>Flavio Iglesias Zabala</h1>
+                <h2>Pagina personal</h2>
+            </div>
+            <img src="./images/Logo UNComa.png" class="imagen-rotativa" alt="Logo Universidad del Comahue">
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a> </li>
+                <li><a href="./acercade.html">Acerca de</a> </li>
+                <li><a href="./juego.html">Juego de adivinanzas</a></li>
+                <li><a href="./contacto.html">Contacto</a> </li>
+            </ul>         
+        </nav>
+
+        <main class="juego">
+            <h1>Juego de Adivinanza de Números</h1>
+            <p>Introduce un número entre 1 y 100:</p>
+            <input type="number" id="guessInput" min="1" max="100">
+            <button onclick="checkGuess()">Adivinar</button>
+            <p id="resultMessage"></p>
+
+            <script src="juego.js"></script>
+        </main>
+        
+        <footer>
+            <p>©2024
+            <b>Universidad Nacional del Comahue<br>
+            Nodo Curza Sierra Grande.</b><br>
+            Los Alerces 485 B° 25 de Mayo<br>
+            Sierra Grande - Río Negro</p>
+        </footer>
+
+        <a class="flecha" href="#top">
+            <div class="flecha1">
+                &#8593;
+            </div>
+        </a>
+    </body>
+</html>
