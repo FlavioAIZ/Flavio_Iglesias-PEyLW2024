@@ -38,6 +38,7 @@ header {
     height: 100px;
     padding-right: 10px;
     margin-left: 10px;
+    border-radius: 50%;
 }
     
 .imagen-rotativa {
@@ -83,6 +84,10 @@ nav a {
 nav a:hover {
     background-color: #a1e410;
     color: #02741b;
+}
+
+main{
+    min-height: 100vh;
 }
 
 .biografia {
@@ -147,20 +152,65 @@ nav a:hover {
     font-weight: bold;
 }
 
-.juego {
-    color: #a1e410;
-    font-weight: bold;
+.juego { 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-top: 50px;
+}
+
+h1 { 
+    color: #a1e410; 
+}
+
+button {
+    background-color: #a1e410;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #058b41;
 }
 
 .juego input[type="number"] {
     width: 50px;
     text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    transition: border-color 0.3s ease;
 }
 
-.juego button {
-    margin-left: 10px;
+.juego p {
+    color:#a1e410;
+    font-size: 1.6em;
+}
+
+.juego input[type="number"]:focus {
+    border-color: #02741b;
+} 
+
+@keyframes fadeIn {
+    from { opacity: 0; } to { opacity: 1; }
+}
+
+#resultMessage {
+    margin-top: 20px;
+    font-size: 1.6em;
+} 
+
+#attempts, #record {
+    margin-top: 10px;
+    font-size: 1.6em;
+    color: #ffffff;
 }
 
 .flecha {
@@ -191,11 +241,10 @@ nav a:hover {
 
 footer {
     width: 90%;
-    background-color:#02741b;
-    color:white;
-    margin: 20px;
+    max-width: 800px;  /* Establece un ancho máximo para el footer */
+    background-color: #02741b;
+    color: white;
+    margin: 20px auto;  /* Centra horizontalmente el footer */
     text-align: center;
     padding: 10px;
 }
-
-
